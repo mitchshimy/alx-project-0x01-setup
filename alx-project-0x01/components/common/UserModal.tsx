@@ -22,7 +22,7 @@ const defaultUser: UserData = {
   }
 };
 
-const UserModal: React.FC<UserModalProps> = ({ isOpen, onClose, onSave }) => {
+const UserModal: React.FC<UserModalProps> = ({ isOpen, onClose, onSubmit }) => {
   const [user, setUser] = useState<UserData>(defaultUser);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -30,7 +30,7 @@ const UserModal: React.FC<UserModalProps> = ({ isOpen, onClose, onSave }) => {
   };
 
   const handleSave = () => {
-    onSave(user);
+    onSubmit(user);
     onClose();
   };
 

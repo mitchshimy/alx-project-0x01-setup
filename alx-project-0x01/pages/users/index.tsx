@@ -34,7 +34,7 @@ const Users: React.FC<UsersPageProps> = ({ users }) => {
             <UserCard key={user.id} {...user} />
           ))}
         </div>
-        <UserModal isOpen={showModal} onClose={() => setShowModal(false)} onSave={handleSave} />
+        <UserModal isOpen={showModal} onClose={() => setShowModal(false)} onSubmit={handleSave} />
       </main>
     </div>
   );
