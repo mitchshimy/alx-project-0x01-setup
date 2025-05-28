@@ -72,5 +72,5 @@ export interface UserData {
 export interface UserModalProps {
   isOpen: boolean;
   onClose: () => void;
-  onSubmit: (user: UserData) => void; // ✅ Make sure this line exists
+  onSubmit: (post: UserProps) => void; // ✅ Make sure this line exists
 }
