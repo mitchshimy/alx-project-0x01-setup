@@ -66,6 +66,7 @@ By completing this project, you will learn to:
 ├── tsconfig.json        # TypeScript configuration
 ├── tailwind.config.js   # Tailwind CSS configuration
 └── .eslintrc.js         # ESLint configuration
+```
 
 ## ⚙️ Implementation Details
 
